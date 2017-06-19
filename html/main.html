@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+<body>
+	<!-- 图片展示及登录层开始 -->
+		<div class="latest-inform">
+			<div class="latest-inform-head">
+				<img src="../images/icon-louderspeaker.png" height="25" width="37">
+				<h6>最新公告</h6>
+			</div>
+			<ul class="latest-news-ul fix">
+				<!-- <li class="latest-news-list" style="margin-top:3px;"><a href="javascript:void(null)" title="电子书包产品暑期优惠活动">电子书包产品暑期优惠活动</a><span>[11.05]</span></li>
+				<li class="latest-news-list"><a href="javascript:void(null)" title="关于我省组团参加2012年纵横信息数字化学习课题实验综合活动的通知" >关于我省组团参加2012年纵横信息数字化学习课题实验综合活动的通知</a><span>[11.05]</span></li>
+				<li class="latest-news-list"><a href="javascript:void(null)" title="关于公布第九届全省中小学“讯飞杯”电脑制作活动获奖名单的通知" >关于公布第九届全省中小学“讯飞杯”电脑制作活动获奖名单的通知</a><span>[11.05]</span></li>
+				<li class="latest-news-list"><a href="javascript:void(null)" title="关于全面推进农远工程应用与管理工作的意见" >关于全面推进农远工程应用与管理工作的意见</a><span>[11.05]</span></li>
+				<li class="latest-news-list"><a href="javascript:void(null)" title="关于召开农远工程应用与管理示范区建设意见" >关于召开农远工程应用与管理示范区建设意见</a><span>[11.05]</span></li>
+				<li class="latest-news-list"><a href="javascript:void(null)" title="电子书包产品暑期优惠活动">电子书包产品暑期优惠活动</a><span>[11.05]</span></li>
+				<li class="latest-news-list"><a href="javascript:void(null)" title="关于我省组团参加2012年纵横信息数字化学习课题实验综合活动的通知" >关于我省组团参加2012年纵横信息数字化学习课题实验综合活动的通知</a><span>[11.05]</span></li>
+				<li class="latest-news-list"><a href="javascript:void(null)" title="关于公布第九届全省中小学“讯飞杯”电脑制作活动获奖名单的通知" >关于公布第九届全省中小学“讯飞杯”电脑制作活动获奖名单的通知</a><span>[11.05]</span></li>
+				<li class="latest-news-list"><a href="javascript:void(null)" title="关于全面推进农远工程应用与管理工作的意见" >关于全面推进农远工程应用与管理工作的意见</a><span>[11.05]</span></li>
+				<li class="latest-news-list"><a href="javascript:void(null)" title="关于召开农远工程应用与管理示范区建设意见" >关于召开农远工程应用与管理示范区建设意见</a><span>[11.05]</span></li>
+				<div class="clear"></div> -->
+			</ul>
+			<script type="text/html" id="latestNewsTmpl">
+				{{each $data as value i}}
+					<li class="latest-news-list"><a href="javascript:void(null)" title={{data.title}}>{{data.title}}</a><span>[{{data.title}}]</span></li>
+				{{/each}}
+			</script>
+		</div>
+		<div class="pic-news">
+			<a href="javascript:void(null)">
+             <img src="../images/pic_button.png" height="243" width="466" id="obj" alt="统一电子政务，推进教育改革">
+			</a>
+		</div>
+		<div class="login-panel">
+			<div class="login-btn">
+				<a href="platform-login.html" class="login-ways-btn btn-selected" target="login-iframe">平台帐号</a>
+				<a href="tianyi-login.html" class="login-ways-btn fl5" target="login-iframe">天翼手机号</a>
+			</div>
+			<div class="login-iframe-container">
+				<iframe src="platform-login.html" class="login-iframe" name="login-iframe" scrolling="no">	
+				</iframe>
+			</div>
+		</div>
+		<div class="clear"></div>
+	<!-- 图片展示及登录层结束 -->
+
+	<!-- 教育要闻及用户帮助层开始 -->
+		<div class="edu-panel">
+			<div class="edu-panel-head">
+				<span>教育要闻</span>
+				<a href="javascript:void(null)">更多>></a>
+			</div>
+			<div class="clear"></div>
+		 	<div>
+				<img src="../images/pic_news.png" class="edu-pic-news">
+				<div class="news-content">
+					<h4 title="长三角优质教育资源协作交流会">长三角优质教育资源协作交流会</h4>
+					<div class="news-content-introduce">以邓小平理论和“三个代表”重要思想为指导，全面贯彻党的十七大和2009年全国“两会”精神，以邓小平理论和“三个代表”重要思想为指导，全面贯彻党的十七大和2009年全国“两会”精神，紧紧围绕“推思想以邓小平理论和“三个代表”重要思想为指导，全面贯彻党的十七大和2012年彻为指党…
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="news-list-panel">
+					<ul>
+					<!-- 	<li class="news-list"><a href="javascript:void(null)" title="电子书包产品暑期优惠活动电子书包产品暑期优惠活动电子书包产品暑期优惠活动[11.05]">电子书包产品暑期优惠活动电子书包产品暑期优惠活动电子书包产品暑期优惠活动</a><span>[11.05]</span></li>
+						<li  class="news-list"><a href="javascript:void(null)" title="关于我省组团参加2012年纵横信息数字化学习课题实验综合活动的通知[11.05]">关于我省组团参加2012年纵横信息数字化学习课题实验综合活动的通知 </a><span>[11.05]</span></li>
+						<li  class="news-list"><a href="javascript:void(null)" title="关于公布第九届全省中小学“讯飞杯”电脑制作活动获奖名单的通知[11.05]">关于公布第九届全省中小学“讯飞杯”电脑制作活动获奖名单的通知</a><span>[11.05]</span></li>
+						<li  class="news-list"><a href="javascript:void(null)" title="关于全面推进农远工程应用与管理工作的意见[11.05]">关于全面推进农远工程应用与管理工作的意见</a><span>[11.05]</span></li>
+						<li class="news-list"><a href="javascript:void(null)" title="电子书包产品暑期优惠活动电子书包产品暑期优惠活动电子书包产品暑期优惠活动[11.05]">电子书包产品暑期优惠活动电子书包产品暑期优惠活动电子书包产品暑期优惠活动</a><span>[11.05]</span></li>
+						<li  class="news-list"><a href="javascript:void(null)" title="关于我省组团参加2012年纵横信息数字化学习课题实验综合活动的通知[11.05]">关于我省组团参加2012年纵横信息数字化学习课题实验综合活动的通知 </a><span>[11.05]</span></li>
+						<li  class="news-list"><a href="javascript:void(null)" title="关于公布第九届全省中小学“讯飞杯”电脑制作活动获奖名单的通知[11.05]">关于公布第九届全省中小学“讯飞杯”电脑制作活动获奖名单的通知</a><span>[11.05]</span></li>
+						<li  class="news-list"><a href="javascript:void(null)" title="关于全面推进农远工程应用与管理工作的意见[11.05]">关于全面推进农远工程应用与管理工作的意见</a><span>[11.05]</span></li> -->
+					</ul>
+					<div class="clear"></div>
+					<script type="text/html" id="eduNewsTmpl">
+						{{each $data as value i}}
+							<li class="news-list"><a href="javascript:void(null)" title={{data.title}}>{{data.title}}</a><span>[data.date]</span></li>
+						{{/each}}
+					</script>
+				</div>			
+			</div> 
+		</div>
+		<div class="user-help-panel">
+			<div class="user-help-panel-head">
+				<span>用户帮助</span>
+			</div>
+			<div class="teacher-panel">
+				<p>我是老师</p>
+				<ul>
+					<li><a href="javascript:void(null)">学校信息</a></li>
+					<li><a href="javascript:void(null)">成绩管理</a></li>
+					<li><a href="javascript:void(null)">班级管理</a></li>
+					<li><a href="javascript:void(null)">资源管理</a></li>
+				</ul>
+			</div>
+			<div class="parents-panel">
+				<p>我是家长</p>
+				<ul>
+					<li><a href="javascript:void(null)">学校信息</a></li>
+					<li><a href="javascript:void(null)">产品订购</a></li>
+				</ul>
+			</div>
+			<div class="student-panel">
+				<p>我是学生</p>
+				<ul>
+					<li><a href="javascript:void(null)">学校信息</a></li>
+					<li><a href="javascript:void(null)">成绩管理</a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+	<!-- 教育要闻及用户帮助层结束 -->
+	<!-- 手机客户端下载链接层开始 -->
+		<div class="client-download">
+			<a href="javascript:void(null)"><img src="../images/client_download.png" alt="手机客户端下载"></a>
+		</div>
+	<!-- </a> -->
+	<div class="clear"></div>
+	<!-- 手机客户端下载链接层结束 -->
+	<!-- 学校公告及常见问题链接层开始 -->
+	<div class="school-inform-nav">
+		<div class="school-inform-nav-head">
+			<a href="school-inform-content.html" class="nva-item item-selected nav-item-selected" target="inform-english-iframe">学校公告</a>
+			<a href="intelligent-english.html" class="nva-item item-selected" target="inform-english-iframe">智能英语</a>
+			<span><a href="javascript:void(null)" class="more-items">更多>></a></span>
+		</div>
+		<div class="school-inform-smart-english-panel">
+			<iframe src="school-inform-content.html" name="inform-english-iframe" class="intelligent-english-iframe" scrolling="no">
+			</iframe>
+		</div>
+	</div>
+	<div class="question-answer">
+	 <div class="question">
+	 	<div class="question-head">
+	 		<span>常见问题解答</span><a href="javascript:void(null)" class="more-question">更多>></a>
+	 	</div>
+	 	<ul class="question-list of">
+	 		<li><a href="javascript:void(null)">1、如何体验产品？</a></li>
+	 		<li><a href="javascript:void(null)">2、如何修改自己的基本资料？</a></li>
+	 		<li><a href="javascript:void(null)">3、如何当上海贼王？</a></li>
+	 		<li><a href="javascript:void(null)">4、如何获得绝世好剑？</a></li>
+	 		<li><a href="javascript:void(null)">5、如何练得绝世武功？</a></li>
+	 	</ul>
+	 </div>
+	 <div class="answer">
+	 	<div class="answer-head">
+	 		<span>友情链接</span>
+	 	</div>
+				<span class="edu-link">教育局链接</span>
+				<!-- <ul class="link-select-menu">
+					<li><a href="javascript:void(null)">安徽省教育厅</a></li>
+					<li><a href="javascript:void(null)">安徽省教育厅</a></li>
+					<li><a href="javascript:void(null)">安徽省教育厅</a></li>
+				</ul> -->
+				<span class="edu-link">学校链接</span>
+	</div>
+	<div class="clear"></div>
+	<!-- 学校公告及常见问题链接层结束 -->
+	<script type="text/javascript" src="../js/plugins/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/plugins/jquery.timers-1.2.js"></script>
+	<script type="text/javascript" src="../js/plugins/home-page.js"></script>
+</body>
+</html>

@@ -1,0 +1,665 @@
+/* 部分公共样式*/
+ * {
+	margin: 0px;
+	padding: 0px;
+}
+img {
+	border: 0;
+}
+body {
+	background: #e9e9e9;
+}
+html,
+body { 
+	margin: 0;
+	height: 100%;
+}
+button,a,li {
+	outline: 0;
+	_blr: expression(this.onFocus=this.blur());/*去除ie下边框虚线*/
+} 
+/*公共样式结束*/
+.layout {
+	width: 100%;
+	height: 100%;
+}
+/*头部*/
+.header {
+	width: 100%;
+	height: 135px;
+	background: url(../images/background_blue.png) repeat-x;
+	min-width: 960px;
+}
+/*头部上部分*/
+.head-top {
+	width: 100%;
+	height: 93px;
+	background-image: url(../images/wave_back2.png);
+	background-repeat: repeat-x;
+}
+/*头部下部分*/
+.head-down {
+	width: 100%;
+	height: 40px;
+}
+.head-top-content {
+	position: relative;
+	margin: 0px auto;
+	width: 940px;
+	height: 100%;
+}
+/*背景小图标*/
+.icons-group {
+	float: right;
+	width: 683px;
+	height: 81px;
+	background: url(../images/banner_icon.png)  no-repeat;
+	_background: url(../images/banner_icon.png)  no-repeat; /*解决ie下背景透明变白色*/
+	_background-position: 255px 5px;
+	_background: none; /*解决ie下背景透明变白色*/
+	_filter:progid: DXImageTransform.Microsoft.AlphaImageLoader(src="../images/banner_icon.png" ,sizingMethod="crop");
+}
+.head-logo {
+	float: left;
+	margin-top: 8px;
+	margin-left: 15px;
+	width: 70px;
+	height: 68px;
+	background: url(../images/web_logo.png) no-repeat;
+	_background: none; /*解决ie下背景透明变白色*/
+	_filter:progid: DXImageTransform.Microsoft.AlphaImageLoader(src="../images/web_logo.png" ,sizingMethod="crop");
+
+}
+.head-title {
+	float: left;
+	display: inline-block;
+	padding-bottom: 10px;
+	margin-top: 26px;
+	margin-left: 10px;
+	width: 122px;
+	height: 41px;
+	background: url(../images/web_title.png) no-repeat;
+	_background: none; /*解决ie下背景透明变白色*/
+	_filter:progid: DXImageTransform.Microsoft.AlphaImageLoader(src="../images/web_title.png" ,sizingMethod="crop");
+}
+.clear {
+	clear:both;
+}
+.icons-group ul {
+	float: right;
+	margin-top: 3px;
+	margin-right: -7px;
+	width: 270px;
+}
+.icons-group  ul li {
+	float: right;
+	list-style-type: none;
+}
+.icons-group ul li a {
+	padding: 0px 9px;
+	font: normal 12px/15px "宋体";
+	text-decoration: none;
+	color: #336699;
+	border-right: 1px solid #336699;
+
+}
+.no-border {
+	border-right: 1px solid transparent;
+}
+.head-down {
+	margin: 0px auto;
+	width: 880px;
+	height: 40px;
+}
+/*顶部导航栏*/
+.menu-list {
+	margin-left: 30px;
+}
+.menu-list li {
+	float: left;
+	margin-left: 3px;
+	margin-top: 7px;
+	width: 99px;
+	height: 35px;
+	list-style-type: none;
+	color: #ffffff;
+}
+.first-page,
+.edu-consult,
+.school-inform,
+.smart-english,
+.hongen-edu,
+.mobile-client,
+.ele-schoolbag,
+.ele-school-logo {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	font: bold 14px/40px "微软雅黑";
+	line-height: 31px;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+}
+/*中间主要部分层叠样式表*/
+.main-content {
+	margin: 10px auto;
+	margin-bottom: 10px;
+	width: 942px;
+	height: 984px;
+}
+/*最新公告*/
+.latest-inform,
+.pic-news,
+.login-panel {
+	float: left;
+}
+.latest-inform {
+	width: 243px;
+	height: 243px;
+	border: 1px solid #9ec5d9;
+	background: white;
+}
+.latest-inform-head {
+	padding: 0.2px;
+	margin: 0px auto;
+	width: 239px;
+	height: 30px;
+	background: url(../images/line.png) repeat-x;
+	background-position: 0px 26px;
+}
+.latest-inform-head img {
+	margin-top: 1px;
+	float: left;
+	vertical-align: top;
+}
+.latest-inform-head h6 {
+	float: left;
+	margin-left: -5px;
+	width: 80px;
+   	font: bold 14px/26px "微软雅黑";
+   	text-align: center;
+}
+
+.latest-news-ul {
+	margin-top: 5px;
+	width: 240px;
+	height: 200px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.latest-news-list {
+	margin: 3px 4px;
+	_margin-top: -7px;  /*解决ie下像素偏移*/
+	width: 218px;
+	height: 22px;
+	background: url(../images/dot.png) no-repeat;
+	background-position: 0px 7px;
+	list-style-type: none; 
+ 	text-indent: 5px;
+}
+.latest-news-list a {
+	float: left;
+	display: inline-block;
+	width: 155px;
+	height: 100%;
+	white-space: nowrap;
+ 	text-overflow: ellipsis; 
+ 	text-indent: 10px;
+ 	overflow: hidden;
+	text-decoration: none;
+	font: normal 12px/25px "微软雅黑";
+	color: #333333;
+}
+.latest-inform ul span {
+	float: right;
+	font: normal 12px/20px "微软雅黑";
+	color: #666666;
+}
+/*图片新闻*/
+.pic-news {
+	margin-left: 8px; 
+	width: 466px;
+	height: 243px;
+	border: 1px solid #9ec5d9;
+	_border: none;
+}
+/*登录面板*/
+.login-panel {
+	float: right;
+	/*margin-left:10px;这里需要修改*/
+	width: 211px;
+	height: 243px;
+	background: white;
+	border: 1px solid #9ec5d9;
+}
+.login-btn {
+	margin: 14px 10px;
+	height: 23px;
+	width: 160px;
+}
+.login-iframe-container{
+	margin: 0 auto;
+	width: 210px;
+	height: 192fpx;
+}
+.login-ways-btn {
+	float: left;
+	display: inline-block;
+	width: 76px;
+	height: 28px;
+	border: none;
+	border-radius: 5px;
+	background: url(../images/login_ways_btn_bg.png) no-repeat;
+	font: normal 12px/23px "微软雅黑";
+	text-decoration: none;
+	text-align: center;
+	color: #333333; 
+}
+.fl5{
+	margin-left: 4px;
+}
+/*教育面板*/
+.edu-panel {
+	float: left;
+	margin-top: 10px;
+	_margin-top: 4px; /*解决ie下像素偏移*/
+	_padding-top: 0px;
+	margin-bottom: 10px;
+	width: 719px;
+	height: 255px;
+	border: 1px solid #9ec5d9;
+	background: white;
+	
+}
+/*教育面板头部*/
+.edu-panel-head {
+	width: 100%;
+	height: 30px;
+	background: url(../images/head_background.png) repeat-x;
+	background-position: 0px 1px;
+	border-bottom: 1px solid #9ec5d9;
+}
+.edu-panel-head span {
+ 	float: left;
+ 	margin-left: 15px;
+ 	height: 100%;
+ 	font: bold 14px/30px "微软雅黑";
+}
+.edu-panel-head a {
+	float: right;
+	margin-right: 10px;
+	font: normal 12px/30px "微软雅黑";
+	text-decoration: none;
+	color: #336699;
+	display: inline;
+}
+.edu-pic-news {
+	float: left;
+	margin: 10px 10px;
+	width: 139px;
+	height: 100px;
+	vertical-align: top;
+}
+/*新闻内容*/
+.news-content {
+	float: right;
+	margin-right: 5px;
+	width: 550px;
+	height: 110px;
+	font: normal 12px/23px "微软雅黑";
+}
+.news-content h4 {
+	margin-top: 16px;
+	width: 540px;
+ 	white-space: nowrap;
+	text-overflow: ellipsis; 
+	font: bold 16px/20px "微软雅黑";
+	text-align: center;
+	color: #336699;
+}
+.news-content-introduce {
+	margin-top: 9px;
+	line-height: 20px;
+}
+.edu-news-content {
+	float: left;
+	margin-top: 10px;
+	width: 550px;
+	height: 110px;
+	font: normal 12px/23px "微软雅黑";
+	color: #666666;
+	text-indent: 25px;
+}
+/*用户帮助面板*/
+.user-help-panel {
+	float: right;
+	margin-top: 10px;
+	_margin-top: 4px; /*解决ie下像素偏移*/
+	width: 211px;
+	height: 255px;
+	border: 1px solid #a4c8da;
+	background: white;
+}
+/*用户帮助面板头部*/
+.user-help-panel-head{
+	width: 100%;
+	height: 30px;
+	background: url(../images/head_background.png) repeat-x;
+	background-position: 0px 1px;
+	border-bottom: 1px solid #9ec5d9;
+}
+.user-help-panel-head span {
+ 	display: inline-block;
+ 	margin-left: 15px;
+ 	font: bold 14px/30px "微软雅黑";
+ 	color: #333333;
+}
+/*消息列表面板*/
+.news-list-panel {
+	float:left;
+	height:100px;
+}
+.news-list-panel ul {
+	width: 718px;
+	height: 100px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.news-list {
+	float: left;
+	margin-left: 10px;
+	width: 680px;
+	list-style-type: none;
+	background: url(../images/dot.png) no-repeat;
+	background-position: 5px 7px;
+	text-indent: 18px;
+}
+.news-list-panel span {
+	float: right;
+	/*float:right;*/
+	font: normal 14px/25px "微软雅黑";
+	color: #666666;
+}
+.news-list a {
+	float: left;
+	width: 510px;
+	white-space: nowrap;
+ 	text-overflow: ellipsis; 
+ 	overflow: hidden;
+	font: normal 14px/25px "微软雅黑";
+	color: #333333;
+	text-decoration: none;
+}
+/*教师-家长-学生面板*/
+.teacher-panel {
+	background: url(../images/icon_teacher.png) no-repeat;
+}
+
+.parents-panel {
+	background: url(../images/icon_parents.png) no-repeat;
+	border-top: 1px solid #a4c8da;
+	border-bottom: 1px solid #a4c8da;
+}
+.student-panel {
+	background: url(../images/icon_student.png) no-repeat;
+}
+.teacher-panel,.parents-panel,.student-panel{
+	margin: 0px auto;
+	width: 206px;
+	height: 74px;
+	background-position: 15px 9px; 
+}
+.teacher-panel p,
+.parents-panel p,
+.student-panel p{
+	margin-left: 77px;
+	width: 60px;
+	white-space: nowrap;
+	text-overflow: ellipsis; 
+	overflow: hidden;
+	text-align: center;
+	font: bold 14px/30px "微软雅黑";
+	color: #336699;
+}
+.teacher-panel ul ,
+.parents-panel ul ,
+.student-panel ul {
+	width: 150px;
+	margin-top: -4px;
+	margin-left: 50px;
+}
+.teacher-panel ul li,
+.parents-panel ul li,
+.student-panel ul li {
+	float: right;
+	margin-top: -5px;
+	width: 60px;
+	width: 64px;
+	text-align: center;
+	list-style-type: none;
+	white-space: nowrap;
+	text-overflow: ellipsis; 
+ 	overflow: hidden;
+}
+.teacher-panel ul li a,
+.parents-panel ul li a,
+.student-panel ul li a {
+	display: inline-block;
+	text-align: center;
+	font: normal 12px/18px "微软雅黑";
+	text-decoration: none;
+	color: #336699;
+}
+.client-download {
+	_padding: 0px;   /*解决ie下默认padding不为0*/
+	_margin-top: 0px;
+	margin-right: 1px;
+	width:940px;
+	height:195px;
+}
+.client-download {
+	margin-top: 0px;
+	background: url(../images/client_download.png);
+	overflow: hidden;
+
+}
+/*学校通告导航栏*/
+.school-inform-nav {
+	float: left;
+	margin-top: 10px;
+	width: 671px;
+	height: 255px;
+	background: white;
+	border: 1px solid #9ec5d9;
+}
+.question-answer {
+	float: right;
+	margin-right: 1px;
+	margin-top: 10px;
+	width: 260px;
+	height: 255px;
+}
+/*学校通知导航头部*/
+.school-inform-nav-head {
+	margin: 0px auto;
+	width: 669px;
+	height: 30px;
+	background: url(../images/head_background.png) repeat-x;
+	background-position: 0px 1px;
+	border-bottom: 1px solid #9ec5d9;
+}
+.nva-item {
+	_position: relative;  /*解决ie6下导航下边界盖不住问题*/
+	_top: 2px;
+	float: left;
+	display: inline-block;
+	margin-top: 4px;
+	_margin-top: 2px;  /*解决ie下像素偏移*/
+	margin-left: 10px;
+	margin-right: -10px;
+	_border-bottom: 1px solid #ffffff;
+	font: bold 14px/25px "微软雅黑";
+	text-align: center;
+	text-decoration: none;
+	color: #333333;
+	width: 84px;
+	height: 27px;
+}
+/*更多*/
+.more-items {
+	color: red;
+	float: right;
+	font: normal 12px/30px "微软雅黑";
+	text-decoration: none;
+}
+.school-inform-nav-head .more-items {
+	float: right;
+	display: inline-block;
+	margin-right: 10px;
+	font: normal 12px/30px "微软雅黑";
+	font-size: 12px;
+	color: #336699;
+	text-decoration: none;
+}
+/*问题面板*/
+.question{
+	width: 259px;
+	height: 121px;
+	border: 1px solid #9ec5d9;
+	background: white;
+}
+.answer {
+	position: relative;
+	margin-top: 8px;
+	_margin-top: 3px;  /*解决ie下像素偏移*/
+	width: 259px;
+	height: 124px;
+	border: 1px solid #9ec5d9;
+	background: white;
+}
+.question-head,
+.answer-head {
+	width: 100%;
+	height: 30px;
+	border-bottom: 1px solid #9ec5d9;
+	background: url(../images/head_background.png) repeat-x;
+	background-position: 0px 1px;
+}
+.question-head span,
+.answer-head span{
+	float: left;
+	display: inline-block;
+	margin-left: 10px;
+	font: bold 14px/30px "微软雅黑";
+}
+.more-question {
+	float: right;
+	margin-right: 10px;
+	font: normal 12px/30px "微软雅黑";
+	text-decoration: none;
+	color: #336699;
+}
+/*问题列表*/
+.question-list {
+	margin: 5px auto;
+	width: 259px;
+	height: 85px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.question-list li {
+	height: 24px;
+	width: 200px;
+	white-space: nowrap;
+	text-overflow: ellipsis; 
+	overflow: hidden;
+}
+.question-list li a {
+	display: inline-block;
+	margin: 5px 15px;
+	font: normal 12px/15px "微软雅黑";
+	text-decoration: none;
+	color: #333333;
+}
+/*教育链接面板*/
+.edu-link {
+	display: block;
+	margin: 11px auto;
+	width: 226px;
+	height: 29px;
+	background: url(../images/select_background.png);
+	font: normal 12px/29px "微软雅黑";
+	text-indent: 8px;
+}
+.link-select-menu {
+	position: absolute;
+	top: 73px;
+	left: 16px;
+	width: 226px;
+	height: 87px;
+	border: 1px solid red;
+	z-index: 9999;
+}
+.link-select-menu li {
+	list-style-type: none;
+	text-indent: 8px;
+}
+.link-select-menu li a {
+	font:normal 12px/25px "微软雅黑";
+	text-decoration: none;
+	color:black;
+}
+/*脚部*/
+.foot {
+	margin: 0px auto;
+	_margin-top: -12px;
+	width: 940px;
+	height: 115px;
+}
+.school-inform-smart-english-panel {
+	width: 670px;
+	height: 220px;
+}
+/*几个iframe样式*/
+iframe.main-iframe {
+	margin-bottom: 10px;
+	height: 100%;
+	width: 100%;
+	border: none;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	min-width: 940px;
+
+}
+.login-iframe {
+	margin-top: -10px;
+	padding: 0px;
+	width: 210px;
+	height: 192px;
+	border: none;
+	
+}
+.intelligent-english-iframe {
+	display: inline-block;
+	margin: 0px auto;
+	width: 670px;
+	height: 220px;
+	border: none;
+	min-width: 670px;
+}
+.btn-click {
+	background: url(../images/nav-surround-border.png);
+	color: #336699;
+}
+.btn-selected {
+	background: url(../images/button_background.png);
+}
+.nav-item-selected {
+	background: url(../images/surround-border.png);
+}
+/*copyright样式*/
+.xf-copyright p {
+	font: normal 12px/20px "微软雅黑";
+	text-align: center;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/school-inform-content.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<script type="text/javascript" src="../js/plugins/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+// -------------------------定时检测输入框是否有输入--------------------------------
+		  $('.input-area').focus(function(){
+		  		$('.disappear').hide();
+		  })
+		  $('.input-area').blur(function(){
+		  	var val = $('.input-area').val();
+		  	if(val.length <= 0){
+		  		$('.disappear').show();
+		  	}
+		  });
+		});
+	</script>
+</head>
+<body>
+	<div class="school-inform-main">
+		 <div class="location-panel">
+				<div class="location-text">
+					您来自安徽省合肥市<span>【
+					<a href="javascript:void(null)">切换城市</a>
+				】</span>，系统默认为您列出历史访问记录和合肥市的学校，点击学校后可查看学校发布的相关信息：
+				</div>
+				<div class="location-search">
+					<label for="keyword" class="search-by-keyword disappear fw f12 g9 ti5">按关键字查找...</label>
+					<form>
+					<input type="text" class="input-area" maxlength="18" id="keyword"><input type="button" value=" " class="btn-area" >
+					</form>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<ul class="school-ul-list">
+				<li><a href="#">合肥市六安路小学</a></li>
+				<li><a href="#">合肥市六安路小学</a></li>
+				<li><a href="#">合肥市六安路小学</a></li>
+				<li><a href="#">合肥市六安路小学</a></li>
+				<li><a href="#">合肥市六安路小学</a></li>
+				<li><a href="#">合肥市六安路小学</a></li>
+				<li><a href="#">合肥市六安路小学</a></li>
+				<li><a href="#">合肥市六安路小学</a></li>
+				<li><a href="#">合肥市六安路小学</a></li>
+				<li><a href="#">合肥市六安路小学</a></li>
+				<li><a href="#">合肥市六安路小学</a></li>
+				<li><a href="#">合肥市六安路小学</a></li>
+				<li><a href="#">合肥市六安路小学</a></li>
+				<li><a href="#">合肥市六安路小学</a></li>
+				<li><a href="#">合肥市六安路小学</a></li>
+				<li><a href="#">合肥市六安路小学</a></li>
+				<li><a href="#">合肥市六安路小学</a></li>
+				<li><a href="#">合肥市六安路小学</a></li>
+				<li><a href="#">合肥市六安路小学</a></li>
+				<li><a href="#">合肥市六安路小学</a></li>
+				<li><a href="#">合肥市六安路小学</a></li>
+				<li><a href="#">合肥市六安路小学</a></li>
+				<li><a href="#">合肥市六安路小学</a></li>
+				<li><a href="#">合肥市六安路小学</a></li>
+				<li><a href="#">合肥市六安路小学</a></li>
+				<li><a href="#">合肥市六安路小学</a></li>
+				<li><a href="#">合肥市六安路小学</a></li>
+			</ul>
+	</div>
+</body>
+</html>

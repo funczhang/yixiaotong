@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/login-panel.css">
+	<script type="text/javascript" src="../js/plugins/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/plugins/jquery.timers-1.2.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#account').focus(function(){
+				$('.input-tip').hide();
+			})
+			$('#account').blur(function(){
+				var val = $('#account').val();
+				if(val.length <= 0){
+					$('.input-tip').show();
+				}
+			});
+	});
+	</script>
+</head>
+<body>
+		<div class="main">
+			<div class="input-account">
+				<label class="input-tip fw f12 g9" for="account">请输入帐号</label>
+				<label for="account">帐号：</label>
+				<input type="text" id="account" maxlength="15">
+			</div>
+			<div class="input-pwd">
+				<label for="pwd">密码：</label>
+				<input type="password" id="pwd" maxlength="15">
+			</div>
+			<div class="forgetpwd-register">
+				<a href="#" class="register">注册</a>
+				<a href="#" class="forget-pwd">忘记密码？</a>				
+			</div>
+			<div class="clear"></div>
+			<a href="#" class="login-button">登&nbsp&nbsp录</a>
+		</div>
+</body>
+</html>
